@@ -47,3 +47,4 @@ if __name__ == '__main__':
     loop_over(memfib,sequence) # approx average .126 ms for 30 elements
     print ''
 
+
