@@ -1,4 +1,3 @@
-from functools import wraps
 import random
 import time
 
@@ -22,7 +21,6 @@ def loop_over(func,list):
 
 def memoize(function):
     value_cache = {}
-    @wraps #preserve docstring, etc.
     def memoizedFunction(*args):
         if args not in value_cache:
             value_cache[args] = function(*args)
